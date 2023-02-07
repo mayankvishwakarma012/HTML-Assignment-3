@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .divblock {
+            display: block;
+            padding: 15px;
+        }
+        
+        .divinline {
+            display: inline-block;
+        }
+        
+        #space {
+            display: inline;
+        }
+        
+        @media (max-width: 600px) {
+            .divblock {
+                width: 100%;
+                height: auto;
+                padding: 0px;
+            }
+            .divinline {
+                width: 100%;
+                height: auto;
+                padding: 10px;
+            }
+            #space {
+                display: none;
+            }
+            #checkbox {
+                padding: 0px 0px 0px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="divblock">
+            <div class="divinline">
+                <label for="fname">First Name:</label><br>
+                <input type="text" name="fname">
+            </div>
+
+            <div class="divinline" id="space">&emsp;&emsp;</div>
+
+            <div class="divinline">
+                <label for="lname">Last Name:</label><br>
+                <input type="text" name="lname">
+            </div>
+        </div>
+
+        <div class="divblock">
+            <div class="divinline">
+                <label for="email">Email:</label><br>
+                <input type="text" name="email">
+            </div>
+
+            <div class="divinline" id="space">&emsp;&emsp;</div>
+
+            <div class="divinline">
+                <label for="contactnumber">Contact Number:</label><br>
+                <input type="text" name="contactnumber">
+            </div>
+        </div>
+
+        <div class="divblock">
+            <div class="divinline">
+                <label for="username">Username:</label><br>
+                <input type="text" name="username">
+            </div>
+
+            <div class="divinline" id="space">&emsp;&emsp;</div>
+
+            <div class="divinline">
+                <label for="password">Password:</label><br>
+                <input type="password" name="password">
+            </div>
+        </div>
+
+        <div class="divblock">
+            <div class="divinline">
+                <label for="address">Address:</label><br>
+                <textarea id="txtArea"></textarea>
+            </div>
+
+            <div class="divinline" id="space">&emsp;&emsp;</div>
+
+            <div class="divinline">
+                <label for="gender">Gender:</label><br>
+                <input type="radio" name="gender " value="male ">
+                <label for="gender">Male</label><br>
+                <input type="radio" name="gender " value="female ">
+                <label for="gender">Female</label>
+            </div>
+        </div>
+
+        <div class="divblock">
+            <div class="divinline">
+                <label for="qualification">Qualification:</label><br>
+                <select name="qualification">
+                    <option value="default">--select--</option>
+                    <option value="btech">B.Tech</option>
+                    <option value="bsc">B.Sc</option>
+                    <option value="bca">BCA</option>
+                </select>
+            </div>
+
+            <div class="divinline" id="space">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</div>
+
+            <div class="divinline">
+                <label for="experience">Experience:</label><br>
+                <select name="experience">
+                    <option value="default">--select--</option>
+                    <option value="0">Fresher</option>
+                    <option value="1">1 year</option>
+                    <option value="2">2 year</option>
+                    <option value="3">3 year</option>
+                    <option value="4">more than 3 year</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="divblock">
+            <div class="divinline" id="checkbox">
+                <label for="coding">Coding language: &emsp;&emsp;</label>
+            </div>
+
+            <div class="divinline" id="checkbox">
+                <input type="checkbox" name="coding" value="c/c++">
+                <label>C/C++</label>
+            </div>
+
+            <div class="divinline" id="checkbox">
+                <input type="checkbox" name="coding" value="java">
+                <label>Java</label>
+            </div>
+
+            <div class="divinline" id="checkbox">
+                <input type="checkbox" name="coding" value="c#">
+                <label>C#</label>
+            </div>
+
+            <div class="divinline" id="checkbox">
+                <input type="checkbox" name="coding" value="php">
+                <label>PHP</label>
+            </div>
+
+            <div class="divinline" id="checkbox">
+                <input type="checkbox" name="coding" value="python">
+                <label>Python</label>
+            </div>
+        </div>
+        <br>
+        <div class="divblock">
+            <div class="divinline">
+                <input type="submit">
+            </div>
+        </div>
+
+
+    </form>
+</body>
+
+</html>
